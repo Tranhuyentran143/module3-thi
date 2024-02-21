@@ -1,0 +1,33 @@
+Create database thi;
+
+use thi;
+
+CREATE TABLE Books (
+  id INT NOT NULL AUTO_INCREMENT,
+  name VARCHAR(255) NOT NULL,
+  description TEXT,
+  price INT NOT NULL,
+  create_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+  updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE Book_Author (
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  book_id INT NOT NULL,
+  author_id INT NOT NULL
+);
+
+
+CREATE TABLE Authors (
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  biography TEXT
+);
+
+
+
+
+
+
+
+
